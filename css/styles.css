@@ -214,6 +214,12 @@ body.scrolled header.main a:hover {
 	position: relative;
 }
 
+.emotion img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
 .emotion:before {
     content: "";
     width: 100%;
@@ -223,6 +229,42 @@ body.scrolled header.main a:hover {
     top: 0;
     left: 0;
     z-index: 1;
+}
+
+.emotion .slide {
+	position: relative;
+}
+
+.emotion .text {
+	position: absolute;
+	z-index: 1;
+	bottom: 27%;
+	left: 5%;
+	font-size: 1.5em;
+}
+
+.emotion .text h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000;
+	margin: 0;
+}
+
+.emotion .text p {
+	font-size: 1.3em;
+	color: #111;
+	margin: 8px 0;
+}
+
+.emotion .text a.button {
+	background: #f7d900;
+	color: #111;
+	text-decoration: none;
+	display: inline-block;
+	padding: 8px 25px;
+	font-size: 0.8em;
+	border-radius: 50px;
+	margin-top: 25px;
 }
 
 .emotion .slick-dots {
@@ -269,12 +311,6 @@ body.scrolled header.main a:hover {
 	background: #000;
 }
 
-.emotion img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
 .welcome {
 	padding: 50px 0;
 }
@@ -289,7 +325,7 @@ body.scrolled header.main a:hover {
 }
 
 main.content a.button {
-	background: #333;
+	background: #111;
 	color: #fff;
 	text-decoration: none;
 	display: inline-block;
