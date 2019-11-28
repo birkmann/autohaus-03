@@ -14,5 +14,12 @@ $(document).ready(function() {
 		autoplaySpeed: 5000,
 		cssEase: 'linear'
 	});
+});
 
+$(window).scroll(function(){
+	if ( $(this).scrollTop() > 200 ) { 
+		$('body').addClass("scrolled");
+	} else { 
+		$('body').removeClass("scrolled");
+	}
 });
