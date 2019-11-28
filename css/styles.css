@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font: 15px/1.9em 'Roboto', sans-serif;
+	font: 16px/1.9em 'Roboto', sans-serif;
 	color: #333;
 	overflow-x: hidden;
 	width: 100%;
@@ -38,25 +38,33 @@ h2 {
 
 .container {
 	padding: 0 20px;
-	max-width: 1400px;
+	max-width: 1600px;
 	margin: 0 auto;
 }
 
 header.main {
 	position: relative;
 	z-index: 100;
-	background: #fff;
-	min-height: 80px;
+	background: #111;
+	padding: 45px 0;
 }
 
 header.main a {
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 }
 
 header.main a.logo {
 	font-size: 32px;
-	line-height: 80px;
+	line-height: 40px;
+	display: flex;
+	font-weight: bold;
+}
+
+header.main a.logo img {
+	max-width: 40px;
+	margin-top: 5px;
+	margin-right: 10px;
 }
 
 header.main nav.main {
@@ -78,8 +86,7 @@ header.main nav.main ul li {
 
 header.main nav.main ul li a {
 	display: block;
-	line-height: 80px;
-	padding: 0 20px;
+	line-height: 40px;
 	font-size: 1.25em;
 	text-align: center;
 }
@@ -97,6 +104,10 @@ header.main nav.main ul li a {
 	}
 	header.main nav.main ul li a {
 		display: inline-block;
+		padding: 0 50px;
+	}
+	header.main nav.main ul li a:last-child {
+		padding-right: 0;
 	}
 }
 
@@ -114,7 +125,7 @@ header.main nav.main ul li a {
 	position: absolute;
 	height: 5px;
 	width: 100%;
-	background: #444;
+	background: #fff;
 	border-radius: 2px;
 	opacity: 1;
 	left: 0;
@@ -170,6 +181,65 @@ header.main nav.main ul li a {
 	.nav-toggle {
 		display: none;
 	}
+}
+
+.emotion {
+	position: relative;
+}
+
+.emotion .slick-arrow {
+	display: none !important;
+}
+
+.emotion .slick-dots {
+	display: flex;
+    position: absolute;
+    bottom: 30px;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.emotion .slick-dots li {
+	list-style: none;
+	margin: 10px;
+}
+
+.emotion .slick-dots li button {
+	background: #fff;
+	border-radius: 100%;
+	border: 0 none;
+	font-size: 0;
+	width: 20px;
+	height: 20px;
+	border: 5px transparent;
+	cursor: pointer;
+	outline: 0 none;
+	display: block;
+}
+
+.emotion .slick-dots li.slick-active button {
+	background: #000;
+	width: 20px;
+	height: 20px;
+}
+
+.emotion img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.welcome {
+	padding: 50px 0;
+}
+
+.welcome .container {
+	max-width: 960px;
+	text-align: center;
 }
 
 @media (min-width: 960px) {
