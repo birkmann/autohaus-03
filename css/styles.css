@@ -355,10 +355,42 @@ main.content a.button:hover {
 	color: #333;
 }
 
+.intro {
+	overflow: hidden;
+}
+
 .intro img {
 	width: 100%;
 	height: auto;
 	display: block;
+}
+
+.intro a {
+	text-decoration: none;
+	color: #000;
+}
+
+.intro h3 {
+	margin: 0;
+	font-size: 1.5em;
+}
+
+.intro p {
+	margin: 10px 0;
+}
+
+.intro .text {
+	padding: 30px;
+	color: #111;
+}
+
+.intro .row .col {
+	background: #f7d900;
+	margin: 15px;
+	border-radius: 3px;
+	overflow: hidden;
+	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+	margin: 30px 10px;
 }
 
 @media (min-width: 960px) {
@@ -369,13 +401,14 @@ main.content a.button:hover {
 	}
 
 	.intro .row .col {
-		width: 33.333%;
+		margin: 0 15px;
 	}
 }
 
 footer.main {
 	background: #111;
 	color: #666;
+	margin-top: 50px;
 }
 
 @media (min-width: 960px) {

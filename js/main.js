@@ -17,10 +17,12 @@ $(document).ready(function() {
 	});
 });
 
-$(window).scroll(function(){
+$(window).on("load resize scroll",function(e){
+
 	if ( $(this).scrollTop() > 100 ) { 
 		$('body').addClass("scrolled");
 	} else { 
 		$('body').removeClass("scrolled");
 	}
+
 });
