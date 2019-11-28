@@ -135,6 +135,22 @@ body.scrolled header.main a:hover {
 		display: inline-block;
 		padding: 0 30px;
 		line-height: 100px;
+		position: relative;
+	}
+	header.main nav.main ul li a:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: 90%;
+		height: 4px;
+		left: 5%;
+		background: #f7d900;
+		display: block;
+		transition: all 0.25s ease-in-out;
+		transform: scale(0);
+	}
+	header.main nav.main ul li a:hover:after {
+		transform: scale(1);
 	}
 }
 
@@ -238,7 +254,7 @@ body.scrolled header.main a:hover {
 .emotion .text {
 	position: absolute;
 	z-index: 1;
-	bottom: 27%;
+	bottom: 28%;
 	left: 5%;
 	font-size: 1.5em;
 }
@@ -251,7 +267,7 @@ body.scrolled header.main a:hover {
 }
 
 .emotion .text p {
-	font-size: 1.3em;
+	font-size: 1.4em;
 	color: #111;
 	margin: 8px 0;
 }
