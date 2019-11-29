@@ -5,6 +5,11 @@ body {
 	overflow-x: hidden;
 	width: 100%;
 }
+@media (min-width: 1600px) {
+	body {
+		font: 18px/1.9em 'Roboto', sans-serif;
+	}
+}
 
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
@@ -86,7 +91,7 @@ header.main a.logo svg {
 
 header.main a.logo svg * {
 	fill: #fff;
-	transition: all 0.25s ease-in-out;
+	transition: color 0.25s ease-in-out;
 }
 
 body.scrolled  header.main a.logo svg * {
