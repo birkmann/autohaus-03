@@ -362,6 +362,7 @@ body.scrolled header.main a:hover {
 @media (min-width: 768px) {
 	.emotion {
 		padding-top: 80px;
+		margin-bottom: -10px;
 	}
 	.emotion .text {
 		position: absolute;
@@ -447,7 +448,7 @@ body.scrolled header.main a:hover {
 	.emotion .text {
 		font-size: 1.5rem;
 		bottom: 32%;
-		left: 9.5%;
+		left: 11%;
 		width: 33%;
 	}
 	.emotion .text.right {
@@ -523,6 +524,22 @@ body.scrolled header.main a:hover {
 	background: #000;
 }
 
+.intro-top {
+	background: #eee;
+	padding: 20px 0;
+}
+
+.intro-top .row {
+	display: flex;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+.intro-top .col {
+	width: 33.333%;
+	padding: 0 20px;
+}
+
 .welcome {
 	padding: 50px 0;
 }
@@ -534,6 +551,11 @@ body.scrolled header.main a:hover {
 
 .welcome .container p {
 	margin-bottom: 25px;
+}
+
+main.content h2 {
+	font-weight: bold;
+	font-size: 1.5em;
 }
 
 main.content a.button {
@@ -619,6 +641,10 @@ main.content a.button:hover {
 		box-shadow: 0 2px 3px rgba(0,0,0,0.1);
 		margin: 30px 20px;
 	}
+}
+
+section.text {
+	padding: 50px 0;
 }
 
 footer.top {
