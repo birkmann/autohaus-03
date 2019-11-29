@@ -150,7 +150,7 @@ body.scrolled header.main a:hover {
 		display: flex;
 	}
 	header.main a.logo {
-		margin-top: 25px;
+		margin-top: 28px;
 	}
 	header.main nav.main {
 		display: block;
@@ -218,12 +218,12 @@ body.scrolled header.main a:hover {
 		transform: translateX(0%);
 	}
 	header.main nav.main ul li a {
-		line-height: 80px;
-		display: block;
-		text-align: left;
-		margin: 0 20px;
-		border-bottom: 1px solid #333;
-		text-transform: uppercase;
+	    line-height: 80px;
+	    display: block;
+	    text-align: left;
+	    margin: 0 20px;
+	    border-bottom: 1px solid rgba(255,255,255,0.5);
+	    text-transform: uppercase;
 	}
 }
 
@@ -342,6 +342,11 @@ body.scrolled header.main a:hover {
 		color: #333;
 		padding: 10px 25px;
 		border-radius: 50px;
+		transition: all 0.25s ease-in-out;
+	}
+	.emotion .text a.button:hover {
+		background: #000;
+		color: #fff;
 	}
 	.emotion .slick-dots {
 		bottom: -30px !important;
@@ -539,6 +544,7 @@ main.content a.button {
 	padding: 8px 40px;
 	border-radius: 3px;
 	border-radius: 50px;
+	transition: all 0.25s ease-in-out;
 }
 
 main.content a.button:hover {
@@ -557,14 +563,6 @@ main.content a.button:hover {
 	transition: transform 1s ease-in-out;
 }
 
-.intro .row .col:hover img {
-	transform: scale(1.2);
-}
-
-.intro .pic {
-	overflow: hidden;
-}
-
 .intro a {
 	text-decoration: none;
 	color: #000;
@@ -579,6 +577,18 @@ main.content a.button:hover {
 	margin: 10px 0 25px;
 }
 
+.intro .row .col:hover img {
+	transform: scale(1.2);
+}
+
+.intro .pic {
+	overflow: hidden;
+}
+
+.intro .container {
+	padding: 0;
+}
+
 .intro .text {
 	padding: 30px;
 	color: #111;
@@ -586,11 +596,13 @@ main.content a.button:hover {
 
 .intro .row .col {
 	background: #f7d900;
-	margin: 15px;
-	border-radius: 3px;
 	overflow: hidden;
-	box-shadow: 0 2px 3px rgba(0,0,0,0.1);
-	margin: 30px 10px;
+}
+
+@media (min-width: 768px) {
+	.intro .container {
+		padding: 0 50px;
+	}
 }
 
 @media (min-width: 960px) {
@@ -599,28 +611,80 @@ main.content a.button:hover {
 		margin-left: -20px;
 		margin-right: -20px;
 	}
-
 	.intro .row .col {
 		width: 33.333%;
 		margin: 0 15px;
+		border-radius: 3px;
+		overflow: hidden;
+		box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+		margin: 30px 20px;
 	}
 }
 
+footer.top {
+	margin-top: 100px;
+	background: #eee;
+}
+
+footer.top h4 {
+	margin: 50px 0 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+footer.top p {
+	margin: 0;
+	line-height: 1.6em;
+	color: #444;
+}
+
+footer.top a {
+	color: #444;
+	text-decoration: none;
+}
+
+footer.top a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+footer.top iframe {
+	display: block;
+}
+
 footer.main {
-	background: #111;
-	color: #666;
-	margin-top: 50px;
+	font-size: 0.85em;
+	background: #ddd;
+	color: #444;
+	padding: 10px 0;
+}
+
+footer.main a {
+	color: #444;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+footer.main a:hover {
+	text-decoration: underline;
 }
 
 @media (min-width: 960px) {
+	footer.top .row,
 	footer.main .row {
 		display: flex;
 		margin-left: -20px;
 		margin-right: -20px;
 	}
-
+	footer.top .row .col,
 	footer.main .row .col {
 		width: 50%;
-		margin: 20px;
+		margin: 0 20px;
+	}
+	footer.top .row .col:first-child {
+		width: 33.33%;
+	}
+	footer.top .row .col:last-child {
+		width: 66.66%;
 	}
 }
