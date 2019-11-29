@@ -457,11 +457,11 @@ main.content a.button:hover {
 
 .intro h3 {
 	margin: 0;
-	font-size: 1.5em;
+	font-size: 1.3em;
 }
 
 .intro p {
-	margin: 10px 0;
+	margin: 10px 0 25px;
 }
 
 .intro .text {
