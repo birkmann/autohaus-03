@@ -61,35 +61,6 @@ header.main {
 	transition: all 0.25s ease-in-out;
 }
 
-@media (max-width: 959px) {
-	header.main {
-		background: #fff;
-		border-bottom: 1px solid #eee;
-	}
-	header.main * {
-		color: #333;
-	}
-	.burger span {
-		background: #333 !important;
-	}
-	header.main a.logo svg * {
-		fill: #333 !important;
-	}
-	nav.main {
-		background: #000;
-		position: fixed;
-		width: 100%;
-		left: 0;
-		height: 100%;
-		padding: 50px 0;
-		transform: translateX(100%);
-		transition: all 0.25s ease-in-out;
-	}
-	body.open nav.main {
-		transform: translateX(0%);
-	}
-}
-
 body.scrolled header.main {
 	background: #fff;
 	border-bottom: 1px solid #ccc;
@@ -107,11 +78,11 @@ header.main a {
 
 header.main a.logo {
 	font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 40px;
-    display: flex;
-    font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 40px;
+	display: flex;
+	font-weight: bold;
 }
 
 header.main a.logo .h {
@@ -188,6 +159,9 @@ body.scrolled header.main a:hover {
 	header.main nav.main ul {
 		display: flex;
 	}
+	header.main nav.main ul li:last-child{
+		display: none;
+	}
 	header.main nav.main ul li a {
 		display: inline-block;
 		padding: 0 25px;
@@ -217,14 +191,50 @@ body.scrolled header.main a:hover {
 	}
 }
 
+@media (max-width: 959px) {
+	header.main {
+		background: #fff;
+		border-bottom: 1px solid #eee;
+	}
+	header.main * {
+		color: #333;
+	}
+	.burger span {
+		background: #333 !important;
+	}
+	header.main a.logo svg * {
+		fill: #333;
+	}
+	nav.main {
+		background: #000;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		height: 100%;
+		transform: translateX(100%);
+		transition: all 0.25s ease-in-out;
+	}
+	body.open nav.main {
+		transform: translateX(0%);
+	}
+	header.main nav.main ul li a {
+		line-height: 80px;
+		display: block;
+		text-align: left;
+		margin: 0 20px;
+		border-bottom: 1px solid #333;
+		text-transform: uppercase;
+	}
+}
+
 .burger {
-    margin-top: 0;
-    width: 31px;
-    height: 15px;
-    position: relative;
-    transform: rotate(0deg);
-    transition: .5s ease-in-out;
-    cursor: pointer;
+	margin-top: 0;
+	width: 31px;
+	height: 15px;
+	position: relative;
+	transform: rotate(0deg);
+	transition: .5s ease-in-out;
+	cursor: pointer;
 }
 
 .burger span {
@@ -273,16 +283,16 @@ body.scrolled header.main a:hover {
 }
 
 .nav-toggle {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    z-index: 9999;
-    margin-left: auto;
-    text-align: center;
-    line-height: 80px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 33px 0 33px 15px;
+	position: absolute;
+	top: 0;
+	right: 20px;
+	z-index: 9999;
+	margin-left: auto;
+	text-align: center;
+	line-height: 80px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 30px 0 33px 15px;
 }
 
 @media (min-width: 960px) {
@@ -313,11 +323,13 @@ body.scrolled header.main a:hover {
 		text-align: center;
 	}
 	.emotion .text {
-		padding: 10px 10px 20px;
+		padding: 20px;
+		max-width: 430px;
+		margin: 0 auto;
 	}
 	.emotion .text h2 {
 		margin: 5px 0;
-		font-size: 1.5em;
+		font-size: 1.4em;
 		font-weight: bold;
 	}
 	.emotion .text p {
@@ -335,10 +347,10 @@ body.scrolled header.main a:hover {
 		bottom: -30px !important;
 	}
 	.emotion .slick-dots li button {
-    	background: #666 !important;
+		background: #666 !important;
 	}
 	.emotion .slick-dots li.slick-active button {
-    	background: #111 !important;
+		background: #111 !important;
 	}
 }
 
@@ -381,6 +393,11 @@ body.scrolled header.main a:hover {
 		border-radius: 50px;
 		margin-top: 10px;
 		font-size: 1.2rem;
+		transition: all 0.25s ease-in-out;
+	}
+	.emotion .text a.button:hover {
+		background: #000;
+		color: #fff;
 	}
 	.emotion .slick-active .text {
 		transform: translateX(0%);
@@ -444,6 +461,16 @@ body.scrolled header.main a:hover {
 	.emotion .text.bottom {
 		bottom: 20%;
 	}
+	/*
+	.emotion .slick-slide {
+		height: 100vh;
+		overflow: hidden;
+	}
+	.emotion .slick-slide img {
+		width: 120%;
+		margin-left: -10%;
+	}
+	*/
 }
 
 
