@@ -7,6 +7,7 @@ el.onclick = function() {
 }
 
 $(document).ready(function() {
+	$("body").removeClass("preload");
 	$(".emotion .slides").slick({
 		dots: true,
 		infinite: true,

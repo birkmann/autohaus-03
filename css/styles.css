@@ -42,9 +42,15 @@ h2 {
 }
 
 .container {
-	padding: 0 20px;
+	padding: 0 10px;
 	max-width: 1600px;
 	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 50px;
+	}
 }
 
 header.main {
@@ -53,6 +59,42 @@ header.main {
 	z-index: 100;
 	border-bottom: 1px solid rgba(255,255,255,0.5);
 	transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 768px) {
+	header.main {
+		background: #fff;
+		border-bottom: 1px solid #eee;
+	}
+	header.main * {
+		color: #333;
+	}
+	.burger span {
+		background: #333 !important;
+	}
+	header.main a.logo svg * {
+		fill: #333 !important;
+	}
+	nav.main {
+		background: #000;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		height: 100%;
+		padding: 50px 0;
+		transform: translateX(100%);
+		transition: all 0.25s ease-in-out;
+	}
+	body.open nav.main {
+		transform: translateX(0%);
+	}
+	.emotion {
+		padding-top: 80px;
+	}
+}
+
+@media (min-width: 768px) {
+	
 }
 
 body.scrolled header.main {
@@ -116,10 +158,6 @@ body.scrolled  header.main a.logo svg * {
 	fill: #000;
 }
 
-header.main nav.main {
-	display: none;
-}
-
 body.open header.main nav.main {
 	display: block;
 }
@@ -178,13 +216,13 @@ body.scrolled header.main a:hover {
 }
 
 .burger {
-	margin-top: 12px;
-	width: 31px;
-	height: 15px;
-	position: relative;
-	transform: rotate(0deg);
-	transition: .5s ease-in-out;
-	cursor: pointer;
+    margin-top: 0;
+    width: 31px;
+    height: 15px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
 }
 
 .burger span {
@@ -234,14 +272,15 @@ body.scrolled header.main a:hover {
 
 .nav-toggle {
 	position: absolute;
-	top: 25px;
-	right: 20px;
-	z-index: 9999;
-	margin-left: auto;
-	text-align: center;
-	line-height: 80px;
-	font-weight: bold;
-	cursor: pointer;
+    top: 0;
+    right: 20px;
+    z-index: 9999;
+    margin-left: auto;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 36px 0 35px 10px;
 }
 
 @media (min-width: 960px) {
