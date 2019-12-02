@@ -16,6 +16,14 @@ $(document).ready(function() {
 		autoplaySpeed: 5000,
 		cssEase: 'linear'
 	});
+	$(".cars .slider").slick({
+		dots: true,
+		infinite: true,
+		autoplay: false,
+		arrows: false,
+		autoplaySpeed: 5000,
+		cssEase: 'linear'
+	});
 });
 
 $(window).on("load resize scroll",function(e){
