@@ -571,15 +571,21 @@ body.scrolled header.main a:hover {
 	text-align: right;
 }
 
-.intro-top .row {
-	display: flex;
-	margin-left: -20px;
-	margin-right: -20px;
+.intro-top .col {
+	padding: 20px;
 }
 
-.intro-top .col {
-	width: 33.333%;
-	padding: 0 30px;
+@media (min-width: 960px) {
+	.intro-top .row {
+		display: flex;
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+
+	.intro-top .col {
+		width: 33.333%;
+		padding: 0 30px;
+	}
 }
 
 .welcome {
